@@ -1,10 +1,7 @@
 class Bookmark
 
-  def all
-    bookmark1 = Bookmark.new
-    bookmark2 = Bookmark.new
-    bookmark3 = Bookmark.new
-    arr = ["bookmark1", bookmark2, bookmark3]
+  def self.all
+    arr = ["https://www.ebay.co.uk", "https://www.youtube.com", "https://www.bbc.co.uk/cbeebies"]
   end
 
   
