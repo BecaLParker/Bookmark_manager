@@ -23,6 +23,7 @@ GEM
     parallel (1.20.1)
     parser (3.0.1.1)
       ast (~> 2.4.1)
+    pg (1.2.3)
     public_suffix (4.0.6)
     racc (1.5.2)
     rack (2.2.3)
@@ -57,6 +58,9 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.5.0)
       parser (>= 3.0.1.1)
+    rubocop-rspec (2.3.0)
+      rubocop (~> 1.0)
+      rubocop-ast (>= 1.1.0)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.4)
     simplecov (0.21.2)
@@ -87,8 +91,10 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  pg (~> 1.2, >= 1.2.3)
   rspec
-  rubocop
+  rubocop (~> 1.15)
+  rubocop-rspec (~> 2.3)
   simplecov
   sinatra
   sinatra-contrib
