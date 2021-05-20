@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 require 'pg'
-
+# Bookmark class is the ruby object wrapper for the DB data
 class Bookmark
   attr_reader :id, :title, :url
 
   def initialize(id:, title:, url:)
-    @id  = id
+    @id = id
     @title = title
     @url = url
   end

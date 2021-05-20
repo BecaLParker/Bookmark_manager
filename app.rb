@@ -5,7 +5,6 @@ require 'sinatra/reloader'
 require './lib/bookmarks'
 
 # BookmarkManager class is the controller
-
 class BookmarkManager < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
